@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menampilkan Gambar</title>
+</head>
+<body>
+	<h2> IMG INTERNAL </h2>
+  <img src="shinchan.jpg" alt="chana bawa kembang" width="200" height="150">
+
+
+	
+	<h2> IMG EKSTERNAL </h2>
+  <img src="https://i.pinimg.com/736x/1a/93/61/1a93619dcf674d63f39ab113548a5a87.jpg" alt="haechangue">
+</body>
+</html>
