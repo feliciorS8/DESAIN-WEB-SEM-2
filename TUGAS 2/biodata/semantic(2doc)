@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<section>
+  <h1>Bagaimana cara mudah untuk memahami HTML semantic?</h1>
+  <p>Cara termudah memahami HTML semantik adalah dengan berpikir tentang makna konten Anda dan memilih tag yang paling tepat untuk menggambarkan makna tersebut. Anggaplah tag semantik sebagai cara untuk memberikan "label" yang jelas pada setiap bagian penting dari halaman web Anda, sehingga mudah dipahami oleh mesin, pembaca layar, dan pengembang. Latihan dan melihat contoh kode dengan dan tanpa semantik akan sangat membantu memperkuat pemahaman Anda. 
+  by:geminiAI</p>
+</section>
+
+<section>
+  <h1>Apa aja sih elemen HTML semantic?</h1>
+  <p>Elemen Struktur Halaman yaituuuuuuuuu:
+
+<br>(header): Menyatakan bagian kepala (introduksi atau navigasi) dari dokumen atau sebuah bagian.<br>
+<br>(nav): Menunjukkan bagian navigasi untuk situs.<br>
+<br>(main): Merepresentasikan konten utama dari dokumen. Hanya boleh ada satu elemen  per dokumen.<br>
+<br>(article): Berisi konten yang berdiri sendiri dan dapat didistribusikan atau digunakan kembali secara independen (misalnya, posting blog, artikel berita).<br>
+<br>(section): Mengelompokkan konten terkait yang memiliki tema atau tujuan yang sama.<br>
+<br>(aside): Menyajikan konten yang terkait tetapi terpisah dari konten utama (misalnya, sidebar, catatan pinggir, iklan).<br>
+<br>(footer): Menandai bagian kaki dari dokumen atau sebuah bagian, biasanya berisi informasi hak cipta, tautan ke kebijakan privasi, atau informasi kontak.<br></p>
+</section>
+
+<footer>khodijah qonita-1124102167</footer>
+</body>
+</html>
+
