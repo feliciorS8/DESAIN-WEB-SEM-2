@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form biodata calon idol kitaaa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        
+        legend {
+            font-weight: bold;
+            padding: 0 5px;
+        }
+        
+        .inline-group label {
+            display: inline;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+        
+        input, select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        select {
+            min-width: 150px;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulir Biodata Mahasiswa</h1>
+    </header>
+    
+    <main>
+        <form id="biodataForm" method="post" action="#">
+            <section>
+                <h2>Data Pribadi</h2>
+                
+                <div class="form-group">
+                    <label for="nama">Nama Mahasiswa:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="alamatemail">Alamat Email:</label>
+                    <input type="email" id="alamatemail" name="alamatemail" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nomortelp">Nomor Telepon/HP:</label>
+                    <input type="tel" id="nomortelp" name="nomortelp" required>
+                </div>
+                
+                <fieldset>
+                    <legend>Tempat Lahir</legend>
+                    <div class="form-group">
+                        <label for="provinsi">Provinsi:</label>
+                        <select id="provinsi" name="provinsi" required>
+                            <option value="">Pilih Provinsi</option>
+                            <option value="Jawa Timur">Jawa Timur</option>
+                            <option value="Jawa Barat">Jawa Barat</option>
+                            <option value="Osaka">Osaka</option>
+                            <option value="Fukuoka">Fukuoka</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="kota">Kota:</label>
+                        <select id="kota" name="kota" required>
+                            <option value="">Pilih Kota</option>
+                            <option value="Banyuwangi">Banyuwangi</option>
+                            <option value="Jember">Jember</option>
+                        </select>
+                    </div>
+                </fieldset>
+                
+                <div class="form-group">
+                    <label for="tanggallahir">Tanggal Lahir:</label>
+                    <input type="date" id="tanggallahir" name="tanggallahir" required>
+                </div>
+                
+                <fieldset>
+                    <legend>Jenis Kelamin</legend>
+                    <div class="form-group inline-group">
+                        <input type="radio" name="gender" id="gender1" value="Laki-laki" required>
+                        <label for="gender1">Laki-laki</label>
+                        
+                        <input type="radio" name="gender" id="gender2" value="Perempuan">
+                        <label for="gender2">Perempuan</label>
+                    </div>
+                </fieldset>
+                
+                <div class="form-group">
+                    <label for="agama">Agama:</label>
+                    <select id="agama" name="agama" required>
+                        <option value="">Pilih Agama</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen Katolik">Kristen Katolik</option>
+                        <option value="Kristen Protestan">Kristen Protestan</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Khonghucu">Khonghucu</option>
+                        <option value="Penghayat Kepercayaan">Penghayat Kepercayaan Tuhan YME</option>
+                        <option value="Lain-lain">Lain-lain</option>
+                    </select>
+                </div>
+                
+                <fieldset>
+                    <legend>Hobi</legend>
+                    <div class="form-group inline-group">
+                        <input type="checkbox" name="hobi" id="hobi1" value="Membaca">
+                        <label for="hobi1">Membaca</label>
+                        
+                        <input type="checkbox" name="hobi" id="hobi2" value="Olahraga">
+                        <label for="hobi2">Olahraga</label>
+                        
+                        <input type="checkbox" name="hobi" id="hobi3" value="Musik">
+                        <label for="hobi3">Musik</label>
+                        
+                        <input type="checkbox" name="hobi" id="hobi4" value="Traveling">
+                        <label for="hobi4">Traveling</label>
+                    </div>
+                </fieldset>
+            </section>
+            
+            <div class="form-group">
+                <button type="submit">Kirim Data</button>
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 dijahaechan</p>
+    </footer>
+</body>
+</html>
