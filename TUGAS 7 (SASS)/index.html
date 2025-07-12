@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ijenpulak</title>
+  <link rel="stylesheet" href="sass.css" />
+</head>
+<body>
+
+  <header>
+    <img src="ijen dija.jpg" alt="error" />
+
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Galery</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-text">
+      <h1>So, when will you come here? <span>Banyuwangi</span></h1>
+      <p>
+        Every trail tells a different story, and every story starts with one brave step.
+        The mountains of Banyuwangi are calling you to explore their hidden wonders.
+        From the majestic peaks to the lush valleys, every corner holds a new adventure.
+      </p>
+    </div>
+  </header>
+
+  <!-- Audio autoplay muted -->
+  <audio id="bgmusic" autoplay muted loop>
+    <source src="about_you .mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Tombol unmute -->
+  <button id="soundToggle">🔈</button>
+
+  <footer>
+    <p>Hubungi kami di Instagram & TikTok: <strong>@dijahaechan</strong></p>
+  </footer>
+
+  <script>
+    const bgmusic = document.getElementById("bgmusic");
+    const soundToggle = document.getElementById("soundToggle");
+
+    soundToggle.addEventListener("click", () => {
+      if (bgmusic.muted) {
+        bgmusic.muted = false;
+        soundToggle.textContent = "🔊";
+      } else {
+        bgmusic.muted = true;
+        soundToggle.textContent = "🔈";
+      }
+    });
+  </script>
+
+</body>
+</html>
