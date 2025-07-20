@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: #fcfafa;
+      color: #000;
+    }
+
+    .form-container {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 40px 30px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 0 auto 60px;
+    }
+
+    .form-container h4 {
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .form-container p {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 30px 20px;
+    }
+
+    footer h5, footer p, footer u, footer em {
+      color: #fff;
+    }
+
+    .payment-logos img, .shipment-logos img {
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 12px;
+      color: #ccc;
+      margin-top: 30px;
+    }
+
+    .second-image-wrapper {
+      display: flex;
+      align-items: end;
+      gap: 20px;
+      justify-content: start;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .second-image-wrapper img {
+      width: 500px;
+      max-width: 100%;
+    }
+
+    .second-image-wrapper p {
+      font-style: italic;
+      font-size: 14px;
+      margin: 0;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .payment-logos img, .shipment-logos img {
+        height: 30px;
+      }
+      footer h5 {
+        font-size: 16px;
+      }
+      .second-image-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="LOGO.png" alt="Logo" width="40" height="40" class="d-inline-block me-2">
+      Corteiz
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link active" href="aboutus.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmation</a></li>
+        <li class="nav-item"><a class="nav-link" href="lookbook.html">Look Book</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About Images and Caption -->
+<section class="container my-5">
+  <div class="mb-4">
+    <img src="hoodie praedae.webp" alt="First Model" class="img-fluid d-block" style="width: 500px;">
+  </div>
+  <div class="second-image-wrapper">
+    <img src="mobilhoodie.jpg" alt="Second Model">
+    <p>made by love, born to hate, die for stuff.</p>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<div class="form-container">
+  <h4 class="text-center">Let's Talk With Us</h4>
+  <p class="text-center">Feel free to contact us with any question or concerns. You can use the form on our website or email us directly. We appreciate your interest and look forward to hearing from you.</p>
+  
+  <form>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="firstName" class="form-label">Name*</label>
+        <input type="text" class="form-control" id="firstName" required>
+      </div>
+      <div class="col-md-6">
+        <label for="lastName" class="form-label">Last Name*</label>
+        <input type="text" class="form-control" id="lastName" required>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email*</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="mb-4">
+      <label for="message" class="form-label">Message*</label>
+      <textarea class="form-control" id="message" rows="5" required></textarea>
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary px-4">SUBMIT</button>
+    </div>
+  </form>
+</div>
+<!-- LINK SOSMED YGES YAA -->
+<div class="text-center mt-4">
+  <h5>Follow Us</h5>
+  <a href="https://www.instagram.com/haechanahceah?igsh=eHVpa2FmZGM5Z3o2" target="_blank" class="me-3 text-decoration-none text-dark">
+    <img src="data:image/jpeg;base64,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" alt="Instagram" width="30" height="30"> 
+</div>
+
+<!-- Footer lagii-->
+<footer class="text-center">
+  <div class="container">
+    <p>
+      <em>Corteiz</em> this brand <em>West Java</em> since <u>2022</u>.<br>
+      The first hoodie broken white “kiss me” and it’s shocking for you guys! Thank u for support!
+    </p>
+
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h5>Payment Method</h5>
+        <div class="d-flex justify-content-center gap-3 mt-2 payment-logos">
+          <img src="ovo.png" alt="OVO">
+          <img src="mandiri.png" alt="Mandiri">
+          <img src="shopeepay.png" alt="ShopeePay">
+          <img src="gopay.png" alt="Gopay">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h5>Shipment Method</h5>
+        <div class="d-flex justify-content-center gap-3 mt-2 shipment-logos">
+          <img src="jne.png" alt="JNE">
+          <img src="jnt.png" alt="JNT Express">
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright mt-4">
+      <p>© Copyright Fashion Brand 2025</p>
+      <p>Made with LOoVe by haechandija.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

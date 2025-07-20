@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Look Book</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: #fcfafa;
+      color: #000;
+    }
+
+    .navbar {
+      border-bottom: none;
+      box-shadow: none;
+    }
+
+    .nav-link {
+      color: #000;
+      margin: 10px;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: -2px;
+      background-color: #000;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .nav-link.active {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .navbar-brand {
+      font-family: cursive;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .photo-grid {
+      padding: 0 15px;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 30px 20px;
+    }
+
+    footer h5,
+    footer p,
+    footer u,
+    footer em {
+      color: #fff;
+    }
+
+    .payment-logos img,
+    .shipment-logos img {
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 12px;
+      color: #ccc;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .payment-logos img,
+      .shipment-logos img {
+        height: 30px;
+      }
+
+      footer h5 {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="LOGO.png" alt="Logo" width="40" height="40" class="d-inline-block me-2">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmation</a></li>
+        <li class="nav-item"><a class="nav-link active" href="lookBook.html">Look Book</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Look Book Grid -->
+<div class="container my-5 photo-grid">
+  <div class="row g-3">
+    <div class="col-6 col-sm-4 col-md-3"><img src="mobilhoodie.jpg" alt="Look 1"></div>
+    <div class="col-6 col-sm-4 col-md-3"><img src="kisshoodie.jpg" alt="Look 2"></div>
+    <div class="col-6 col-sm-4 col-md-3"><img src="baju 3.webp" alt="Look 3"></div>
+    <div class="col-6 col-sm-4 col-md-3"><img src="felis 2.jpg" alt="Look 4"></div>
+    <div class="col-6 col-sm-4 col-md-3"><img src="chimbhoodie.jpg" alt="Look 5"></div>
+    <div class="col-6 col-sm-4 col-md-3"><img src="hoodie 3.jpg" alt="Look 6"></div>
+    <div class="col-6 col-sm-4 col-md-3"><img src="bacabuku.jpg" alt="Look 7"></div>
+    <div class="col-6 col-sm-4 col-md-3"><img src="SELCA.jpg" alt="Look 8"></div>
+    <div class="col-6 col-sm-4 col-md-3"><img src="balckredhoodie.jpg" alt="Look 9"></div>
+    <div class="col-6 col-sm-4 col-md-3"><img src="shirtitem.jpg" alt="Look 10"></div>
+    <div class="col-6 col-sm-4 col-md-3"><img src="hoodie praedae.webp" alt="Look 11"></div>
+    <div class="col-6 col-sm-4 col-md-3"><img src="hoodieputih.jpg" alt="Look 12"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>
+      <em>Corteiz</em> this brand <em>West Java</em> since <u>2022</u>.<br>
+      The first hoodie broken white “kiss me” and it’s shocking for you guys! Thank u for support!
+    </p>
+
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h5>Payment Method</h5>
+        <div class="d-flex justify-content-center gap-3 mt-2 payment-logos">
+          <img src="ovo.png" alt="OVO">
+          <img src="mandiri.png" alt="Mandiri">
+          <img src="shopeepay.png" alt="ShopeePay">
+          <img src="gopay.png" alt="Gopay">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h5>Shipment Method</h5>
+        <div class="d-flex justify-content-center gap-3 mt-2 shipment-logos">
+          <img src="jne.png" alt="JNE">
+          <img src="jnt.png" alt="JNT Express">
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright mt-4">
+      <p>© Copyright Fashion Brand 2025</p>
+      <p>Made with LOoVe by haechandija.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
