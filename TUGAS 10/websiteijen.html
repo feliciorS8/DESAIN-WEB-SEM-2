@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS IJEN WEBSITE LAYOUT</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        /* Header style */
+        .header {
+            background-color: antiquewhite;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* Navigation style */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            position: sticky;
+            top: 0;
+        }
+        
+        /* Navigation links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        /* Hover effect */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        /* Clearfix for floated elements */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        /* Create three equal columns that float next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+        
+        /* Responsive layout - makes columns stack on small screens */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+            
+            .topnav a {
+                float: none;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>KOMPAS TV</h1>
+        <p>Independen & Terpecaya </p>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Nasional</a>
+        <a href="#">Talkshow</a>
+        <a href="#">Internasional</a>
+    </div>
+
+    <div class="row clearfix">
+        <div class="column">
+            <h2>Breaking News</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        
+        <div class="column">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        
+        <div class="column">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+    </div>
+</body>
+</html>
